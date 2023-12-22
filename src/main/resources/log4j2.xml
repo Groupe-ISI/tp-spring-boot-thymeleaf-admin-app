@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Configuration>
+<!DOCTYPE Configuration>
+
+<Configuration status="WARN">
     <Properties>
         <Property name="LOG_EXCEPTION_CONVERSION_WORD">%xwEx</Property>
         <Property name="LOG_PATTERN_LEVEL">%-5level [admin-app,%X{traceId},%X{spanId}]</Property>
@@ -8,6 +10,7 @@
             %clr{%pid}{magenta} %clr{---}{faint} %clr{[%15.15t]}{faint} %clr{%-40.40c{1.}}{cyan} %clr{:}{faint}
             %m%n${sys:LOG_EXCEPTION_CONVERSION_WORD}
         </Property>
+        <Property name="log-path">logs</Property>
     </Properties>
     <Appenders>
         <Console name="Console" target="SYSTEM_OUT" follow="true">
@@ -21,27 +24,27 @@
             </JsonLayout>
         </Console>
         <!-- config fichier de log -->
-        <File name="file" fileName="logs/logs.log">
+        <RollingFile name="File" fileName="${log-path}/logs.log">
             <!--PatternLayout pattern="[%t] %-5p | %-60c | %m (%F:%L)%n" /-->
             <JsonLayout complete="false" compact="false">
                 <KeyValuePair key="service" value="admin-app"/>
             </JsonLayout>
-        </File>
+        </RollingFile>
         <!-- config fichier de log -->
     </Appenders>
 
     <Loggers>
         <Root level="info">
-            <AppenderRef ref="Console"/><!-- pour avoir le format texte des logs -->
-            <!-- AppenderRef ref="Console_JSON" / --><!-- pour avoir le format json des logs -->
-            <AppenderRef ref="file"/><!-- config fichier de log -->
+            <!--<AppenderRef ref="Console"/>--><!-- pour avoir le format texte des logs -->
+            <AppenderRef ref="Console_JSON" level="all"/><!-- pour avoir le format json des logs -->
+            <AppenderRef ref="File"/><!-- config fichier de log -->
         </Root>
 
-        <Logger name="com.groupeisi.adminapp.controller" level="debug" additivity="false">
+        <Logger name="com.groupeisi.adminapp.controller" level="all" additivity="true">
             <AppenderRef ref="Console_JSON"/>
         </Logger>
 
-        <Logger name="com.groupeisi.adminapp.service" level="debug" additivity="false">
+        <Logger name="com.groupeisi.adminapp.service" level="debug" additivity="true">
             <AppenderRef ref="Console_JSON"/>
         </Logger>
 

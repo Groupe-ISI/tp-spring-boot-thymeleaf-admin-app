@@ -1,0 +1,35 @@
+2023-12-22T00:21:43.860Z  WARN 27152 --- [spring-admin] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h45s517ms340µs500ns).
+2023-12-22T15:40:49.863Z  WARN 27152 --- [spring-admin] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15h18m34s897ms914µs500ns).
+2023-12-22T16:09:10.838Z  WARN 27152 --- [spring-admin] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m20s230ms30µs200ns).
+2023-12-22T16:31:08.360Z  WARN 27152 --- [spring-admin] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m57s119ms347µs).
+2023-12-22T16:57:05.406Z  INFO 27152 --- [spring-admin] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-12-22T16:57:06.352Z  INFO 27152 --- [spring-admin] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-22T16:57:06.609Z  INFO 27152 --- [spring-admin] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-22T16:57:06.747Z  INFO 27152 --- [spring-admin] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-22T16:57:08.002Z  INFO 27152 --- [spring-admin] [restartedMain] c.g.adminapp.AdminAppApplication         : Starting AdminAppApplication using Java 17.0.9 with PID 27152 (C:\Users\HP\Me\M2GL-2023-2024\JEE\Projets\tp-spring-boot-thymeleaf\admin-app\target\classes started by HP in C:\Users\HP\Me\M2GL-2023-2024\JEE\Projets\tp-spring-boot-thymeleaf\admin-app)
+2023-12-22T16:57:08.004Z  INFO 27152 --- [spring-admin] [restartedMain] c.g.adminapp.AdminAppApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-12-22T16:57:08.467Z  INFO 27152 --- [spring-admin] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-22T16:57:08.496Z  INFO 27152 --- [spring-admin] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 3 JPA repository interfaces.
+2023-12-22T16:57:08.853Z  INFO 27152 --- [spring-admin] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2023-12-22T16:57:08.854Z  INFO 27152 --- [spring-admin] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-22T16:57:08.855Z  INFO 27152 --- [spring-admin] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2023-12-22T16:57:09.025Z  INFO 27152 --- [spring-admin] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-22T16:57:09.026Z  INFO 27152 --- [spring-admin] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1013 ms
+2023-12-22T16:57:09.164Z  INFO 27152 --- [spring-admin] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-22T16:57:09.196Z  INFO 27152 --- [spring-admin] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2023-12-22T16:57:09.207Z  INFO 27152 --- [spring-admin] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-22T16:57:09.212Z  INFO 27152 --- [spring-admin] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2023-12-22T16:57:09.264Z  INFO 27152 --- [spring-admin] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5f4fec40
+2023-12-22T16:57:09.265Z  INFO 27152 --- [spring-admin] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2023-12-22T16:57:09.387Z  INFO 27152 --- [spring-admin] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-22T16:57:09.552Z  INFO 27152 --- [spring-admin] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-22T16:57:09.705Z  WARN 27152 --- [spring-admin] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-22T16:57:09.806Z  WARN 27152 --- [spring-admin] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-12-22T16:57:09.856Z  INFO 27152 --- [spring-admin] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-12-22T16:57:09.870Z  INFO 27152 --- [spring-admin] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8083 (http) with context path ''
+2023-12-22T16:57:09.874Z  INFO 27152 --- [spring-admin] [restartedMain] c.g.adminapp.AdminAppApplication         : Started AdminAppApplication in 2.068 seconds (process running for 84317.409)
+2023-12-22T16:57:09.877Z  INFO 27152 --- [spring-admin] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-12-22T16:57:50.561Z  INFO 27152 --- [spring-admin] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-12-22T16:57:50.729Z  INFO 27152 --- [spring-admin] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-22T16:57:50.740Z  INFO 27152 --- [spring-admin] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2023-12-22T16:57:50.777Z  INFO 27152 --- [spring-admin] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
